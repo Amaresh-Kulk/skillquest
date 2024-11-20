@@ -1,0 +1,108 @@
+body {
+  margin: 0; /* Remove default margin to prevent inconsistencies */
+  padding: 0;
+  /* margin-right: 100px; */
+}
+
+.home {
+  height: 1000px;
+  padding-top: 55px; /* Adjusted padding to match the navbar height */
+  font-family: Roboto;
+  position: relative;
+  z-index: 1;
+}
+
+.intro  {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 25px;
+}
+
+.intro h1 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.intro p{
+  width: 600px;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+.navigate {
+  height: 100px;
+  margin: 5px 10px 5px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.item {
+  background-color: white;
+  margin: 20px;
+  padding: 20px 30px 20px 30px;
+
+  border: 1px solid #e5e5e5dc;
+  border-radius: 10px;
+
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+
+  cursor: pointer;
+
+  transition: margin 0.5s;
+}
+.item:hover {
+  margin: 5px;
+  padding: 23px 33px 23px 33px;
+}
+
+
+.icon {
+  margin-right: 20px;
+}
+
+.msg  {
+  display: flex;
+  flex-direction: column;
+}
+
+.msg div{
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  text-align: left;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* .item:hover .msg div{
+  font-size: 20px;
+}  */
+
+.msg p  {
+  margin: 0px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  text-align: left;
+
+  font-size: 14px;
+  font-weight: 100;
+}
+
+/* .item:hover .msg p{
+  font-size: 16px;
+}  */
+

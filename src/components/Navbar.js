@@ -5,7 +5,7 @@ export default class Navbar extends PureComponent {
     return (
       <div className='navbar'>
         <div className='left-nav'>
-          CodeQuest
+          <p>CodeQuest</p>
         </div>
         {/* <div className='mid-nav'>
           middle

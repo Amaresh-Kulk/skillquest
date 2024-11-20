@@ -1,18 +1,15 @@
 .navbar {
-  height: 55px;
-
+  height: 55px; /* Fix navbar height */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
-
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-
+  background-color: white; /* Optional: for better visibility */
 }
 .left-nav {
   width: 300px;
@@ -21,8 +18,17 @@
   font-size: 20px;
   font-weight: 500;
 
-  margin: 10px 0px 10px 50px;
+  margin: 10px 50px 10px 10px;
+  display: flex;
   /* top right bottom left */
+}
+
+.left-nav p {
+  margin: 0px;
+  cursor: pointer;
+  
+  margin-left: 10px;
+  margin-top: 5px;
 }
 /* .mid-nav  {
   background-color: lightgray;
@@ -41,4 +47,8 @@
   font-family: Roboto;
   font-size: 15px;
   font-weight: 300;
+}
+
+.right-nav div  {
+  cursor: pointer;
 }

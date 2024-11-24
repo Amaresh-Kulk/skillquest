@@ -5,7 +5,6 @@ body {
 }
 
 .home {
-  height: 1000px;
   padding-top: 55px; /* Adjusted padding to match the navbar height */
   font-family: Roboto;
   position: relative;
@@ -33,6 +32,8 @@ body {
   text-align: center;
   font-size: 18px;
   font-weight: 300;
+  color: rgb(146, 102, 102);
+
   margin-top: 0px;
 }
 
@@ -53,23 +54,34 @@ body {
   border: 1px solid #e5e5e5dc;
   border-radius: 10px;
 
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
 
   display: grid;
   grid-template-columns: 50px 1fr;
 
   cursor: pointer;
 
-  transition: margin 0.5s;
+  transition: margin 0.05s, box-shadow 0.05s, padding 0.05s;
 }
 .item:hover {
   margin: 5px;
   padding: 23px 33px 23px 33px;
 }
 
+.item:active  {
+  margin-left: 9px;
+  margin-top: 9px;
+
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.item img {
+  width: 30px;
+}
 
 .icon {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .msg  {
@@ -100,9 +112,77 @@ body {
 
   font-size: 14px;
   font-weight: 100;
+  color: rgb(90, 90, 90);
 }
 
 /* .item:hover .msg p{
   font-size: 16px;
 }  */
 
+.why-us {
+  background-color: white;
+
+  margin: 50px 145px 20px 145px;
+  padding: 20px 25px 20px 25px;
+  border-radius: 20px;
+
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+
+  display: grid;
+  grid-template-rows: 30px 1fr;
+}
+
+.question {
+  font-size: 25px;
+  font-weight: 700;
+
+}
+
+.answer {
+
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;  
+
+  margin: 0px;
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-left: 0px;
+}
+
+.why-us-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  
+  margin: 10px 20px 10px 0px;
+
+}
+
+.logo{
+  width: 40px;
+  margin-right: 10px;
+  padding: 10px 0px 10px 0px;
+
+  text-align: left;
+}
+.logo img {
+  width: 50px;
+}
+
+.explanation  {
+  margin-left: 5px;
+  padding: 10px 20px 10px 10px;
+}
+
+.heading  {
+  margin-bottom: 10px;
+  
+  font-weight: 500;
+}
+
+.sub-head  {
+  margin-bottom: 10px;
+
+  color: rgb(99, 98, 98);
+}

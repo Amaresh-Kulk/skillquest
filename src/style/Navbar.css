@@ -1,5 +1,5 @@
 .navbar {
-  height: 55px; /* Fix navbar height */
+  height: 35px; /* Fix navbar height */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10,25 +10,39 @@
   z-index: 100;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   background-color: white; /* Optional: for better visibility */
+  padding: 10px;
 }
 .left-nav {
   width: 300px;
-
+  background-color: white;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
 
   margin: 10px 50px 10px 10px;
-  display: flex;
   /* top right bottom left */
+}
+
+.left-nav img{
+  width: 90px;
+  height: 40px;
+  /* mix-blend-mode: darken; */
+  filter: grayscale(1) brightness(2); /*Converts to white*/
+  
+  margin-top: -10px;
+  padding-top: -10px;
+
+  cursor: pointer;
 }
 
 .left-nav p {
   margin: 0px;
   cursor: pointer;
   
-  margin-left: 10px;
+  margin-left: 3px;
   margin-top: 5px;
+
+  text-align: center;
 }
 /* .mid-nav  {
   background-color: lightgray;
@@ -36,19 +50,48 @@
 } */
 .right-nav  {
   width: 500px;
-
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   
-  margin: 10px 50px 10px 10px;
-  padding: 10px 5px 10px 5px;
-
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 300;
+  margin: 2px 50px 0px 10px;
+  padding: 5px 15px 5px 15px;
 }
 
 .right-nav div  {
   cursor: pointer;
+}
+
+.right-nav img  {
+  width: 30px;
+  height: 20px;
+}
+
+.performance  {
+  width: 70px;
+  border: 1px solid grey;
+  border-radius: 35px;
+}
+
+.home-icon .tooltip,
+.aptitude-icon .tooltip,
+.coding-icon .tooltip,
+.performance-icon .tooltip  {
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px; 
+  bottom: -20px;
+  opacity: 0; 
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.home-icon:hover  .tooltip,
+.aptitude-icon:hover  .tooltip,
+.coding-icon:hover  .tooltip,
+.performance-icon:hover  .tooltip{
+  opacity: 1;
 }

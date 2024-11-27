@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import { Link } from 'react-router-dom';
 import '../style/Navbar.css';
 import MiniLogo from '../images/SkillQuest.png';
 import Home from '../images/home.png'; 
@@ -10,9 +11,10 @@ export default class Navbar extends PureComponent {
     return (
       <div className='navbar'>
         <div className='left-nav'>
-          <a href="Home.js">
+          
+          <Link to="/">
           <img src={MiniLogo} alt='' />
-          </a>
+          </Link>
         </div>
         {/* <div className='mid-nav'>
           middle
@@ -20,27 +22,27 @@ export default class Navbar extends PureComponent {
         
         <div className='right-nav'>
           <div className='home-icon'>
-            <a href="Home.js">
+            <Link to="/">
             <img src={Home} alt="" />
-            </a>
+            </Link>
           <div className='tooltip'>Home</div>
           </div>
           <div className='aptitude-icon'>
-            <a href="Aptitude.js">
+            <Link to="/Aptitude">
             <img src={AptitudeLogo} alt="" />
-            </a>
+            </Link>
           <div className='tooltip'>Aptitude</div>
           </div>
           <div className='coding-icon'>
-            <a href="Coding.js">
+            <Link to="/Coding">
             <img src={CodingLogo} alt="" />
-            </a>
+            </Link>
           <div className='tooltip'>Coding</div>
           </div>
           <div className='performance-icon'>
-            <a href="Performance.js">
+            <Link to="/Performance">
             <img src={PerformanceLogo} alt="" className='performance' />
-            </a>
+            </Link>
           <div className='tooltip'>Performance</div>
           </div>
         </div>

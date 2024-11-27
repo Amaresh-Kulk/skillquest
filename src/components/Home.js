@@ -4,19 +4,20 @@ import aptitudeLogo from '../images/aptitude.png';
 import codingLogo from '../images/coding.png';
 import trophyLogo from '../images/trophyLogo.jpg';
 import communityLogo from '../images/community.jpg';
+import { Link } from 'react-router-dom'; 
 const Home = () => {
   const navigationItems = [
     {
       icon: aptitudeLogo,
       title: 'Aptitude Tests',
       description: 'Practice quantitative, logical, and verbal reasoning',
-      link: 'Aptitude.js',
+      link: 'Aptitude',
     },
     {
       icon: codingLogo,
       title: 'Coding Challenges',
       description: 'Enhance problem-solving skills with hands-on coding',
-      link: 'Coding.js',
+      link: 'Coding',
     },
   ];
 
@@ -32,6 +33,12 @@ const Home = () => {
       subHead: 'Questions based on real interview experiences',
     },
   ];
+  // function sleep(milliseconds) {
+  //   const start = Date.now();
+  //   while (Date.now() - start < milliseconds) {
+  //     // Do nothing, just wait
+  //   }
+  // }
 
   return (
     <div className='home'>
@@ -42,7 +49,7 @@ const Home = () => {
 
       <div className='navigate'>
         {navigationItems.map((item, index) => (
-          <a href={item.link}>
+          <Link to={item.link} className='no-underline'>
             <button key={index} className='item'>
               <div className='icon'>
                 <img src={item.icon} alt={item.title} />
@@ -52,7 +59,7 @@ const Home = () => {
                 <p>{item.description}</p>
               </div>
             </button>
-          </a>
+          </Link>
         ))}
       </div>
 

@@ -1,5 +1,6 @@
 .navbar {
   height: 35px; /* Fix navbar height */
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,12 +10,12 @@
   right: 0;
   z-index: 100;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  background-color: white; /* Optional: for better visibility */
   padding: 10px;
+
 }
+
 .left-nav {
   width: 300px;
-  background-color: white;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
@@ -94,4 +95,18 @@
 .coding-icon:hover  .tooltip,
 .performance-icon:hover  .tooltip{
   opacity: 1;
+}
+
+
+
+.no-underline-signin  {
+  text-decoration: none;
+  padding: 5px;
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 4px;
+
+  font-family: Roboto, "Arial";
+  font-size: 15px;
+  
 }

@@ -44,7 +44,8 @@ const Home = () => {
     <div className='home'>
       <div className='intro'>
         <h1>Master Your Interview Preparation</h1>
-        <p>Comprehensive platform for aptitude testing and coding practice. Get ready for your dream job with our structured learning path.</p>
+        {/* <p>Comprehensive platform for aptitude testing and coding practice.</p> */}
+        {/* <button>Get Started</button> */}
       </div>
 
       <div className='navigate'>
@@ -73,7 +74,7 @@ const Home = () => {
                   <img src={item.logo} alt="" />
                 </div>
                 <div className='explanation'>
-                  <div className='heading'>{item.heading}</div>
+                  <div className='headingHome'>{item.heading}</div>
                   <div className='sub-head'>{item.subHead}</div>
                 </div>
               </div>

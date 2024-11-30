@@ -2,6 +2,8 @@ body {
   margin: 0; /* Remove default margin to prevent inconsistencies */
   padding: 0;
   /* margin-right: 100px; */
+
+  font-family: Roboto;
 }
 
 .home {
@@ -12,32 +14,61 @@ body {
 }
 
 .intro  {
-  height: 130px;
+  height: 460px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 25px;
+  margin-top: 0px;
 
-  
+  background-image: url("../images/homePageImage.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
 
 }
 
 .intro h1 {
-  margin-top: 5px;
+  width: 400px;
+
+  margin-top: 50px;
+  margin-left: 700px;
   margin-bottom: 0px;
+
+  padding: 10px;
+
+  color: aliceblue;
+  font-family: Roboto;
+  font-size: 70px;
+
+  text-shadow: 2px 2px #1a0707;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+
 }
 
 .intro p{
-  width: 600px;
+  width: 500px;
 
   text-align: center;
-  font-size: 18px;
+  font-size: 50px;
   font-weight: 300;
-  color: rgb(146, 102, 102);
+  color: aliceblue;
 
-  margin-top: 0px;
+  margin-top: 50px;
+  cursor: text;
+
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+.intro button {
+
+  margin-left: 50px;
+  margin-bottom: 40px;
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: blueviolet;
 }
 
 .navigate {
@@ -48,6 +79,7 @@ body {
   justify-content: center;
   align-items: center;
   
+  margin-top: 30px;
 
 }
 .item {
@@ -134,7 +166,7 @@ body {
 .why-us {
   background-color: white;
 
-  margin: 50px 245px 20px 245px;
+  margin: 50px 145px 20px 145px;
   padding: 20px 25px 20px 25px;
   border-radius: 20px;
 
@@ -187,9 +219,9 @@ body {
   padding: 10px 20px 10px 10px;
 }
 
-.heading  {
+.headingHome  {
   margin-bottom: 10px;
-  
+  text-align: left;
   font-weight: 500;
 }
 

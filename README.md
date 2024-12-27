@@ -1,2 +1,2 @@
 # skillquest
-A full stack web development project
+Front End Development
